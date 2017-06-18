@@ -2,9 +2,12 @@
 
 // Neat Overrides
 // $column: 90px;
-// $grid-columns: 12;
-// $gutter: 30px;
 // $max-width: 1200px;
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);
 
 // Neat Breakpoints
 $medium-screen: 600px;
