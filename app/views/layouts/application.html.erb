@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AcnlCompanion</title>
+    <title>AC:NL Companion</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="menu">
+      <%= link_to "Home", root_path %>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
