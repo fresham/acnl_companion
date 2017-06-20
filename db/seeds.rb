@@ -6,12 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-models = [ Fish ]
-
-models.each do |model|
-  seed_file = "db/seeds/#{model.to_s.downcase.pluralize}.yml"
+YAMLSeed::MODELS.each do |model_name, fields|
+  seed = YAMLSeed.new( model_name )
   
-  YAML.load_file( seed_file ).each do |attributes|
-    model.create( attributes )
+  YAML.load_file( seed.file ).each do |attributes|
+    seed.model.create( attributes )
   end
 end
