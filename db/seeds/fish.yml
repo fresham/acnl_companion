@@ -1,0 +1,73 @@
+---
+- name: Bitterling
+- name: Pale chub
+- name: Crucian carp
+- name: Dace
+- name: Barbel steed
+- name: Carp
+- name: Koi
+- name: Goldfish
+- name: Popeyed goldfish
+- name: Killifish
+- name: Crawfish
+- name: Soft-shelled turtle
+- name: Tadpole
+- name: Frog
+- name: Freshwater goby
+- name: Loach
+- name: Catfish
+- name: Eel
+- name: Giant snakehead
+- name: Bluegill
+- name: Yellow perch
+- name: Black bass
+- name: Pike
+- name: Pond smelt
+- name: Sweetfish
+- name: Cherry salmon
+- name: Char
+- name: Rainbow trout
+- name: Stringfish
+- name: Salmon
+- name: King salmon
+- name: Mitten crab
+- name: Guppy
+- name: Nibble fish
+- name: Angelfish
+- name: Neon tetra
+- name: Piranha
+- name: Arowana
+- name: Dorado
+- name: Gar
+- name: Arapaima
+- name: Saddled bichir
+- name: Sea butterfly
+- name: Seahorse
+- name: Clownfish
+- name: Surgeonfish
+- name: Butterfly fish
+- name: Napoleonfish
+- name: Zebra turkeyfish
+- name: Blowfish
+- name: Puffer fish
+- name: Horse mackerel
+- name: Barred knifejaw
+- name: Sea bass
+- name: Red snapper
+- name: Dab
+- name: Olive flounder
+- name: Squid
+- name: Moray eel
+- name: Ribbon eel
+- name: Football fish
+- name: Tuna
+- name: Blue marlin
+- name: Giant trevally
+- name: Ray
+- name: Ocean sunfish
+- name: Hammerhead shark
+- name: Shark
+- name: Saw shark
+- name: Whale shark
+- name: Oarfish
+- name: Coelacanth
