@@ -6,10 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-YAMLSeed::MODELS.each do |model_name, fields|
-  seed = YAMLSeed.new( model_name )
-  
-  YAML.load_file( seed.file ).each do |attributes|
-    seed.model.create( attributes )
-  end
-end
+YAMLSeeds.load
