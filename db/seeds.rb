@@ -6,81 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-fish_names = [ 
-  "Bitterling",
-  "Pale chub",
-  "Crucian carp",
-  "Dace",
-  "Barbel steed",
-  "Carp",
-  "Koi",
-  "Goldfish",
-  "Popeyed goldfish",
-  "Killifish",
-  "Crawfish",
-  "Soft-shelled turtle",
-  "Tadpole",
-  "Frog",
-  "Freshwater goby",
-  "Loach",
-  "Catfish",
-  "Eel",
-  "Giant snakehead",
-  "Bluegill",
-  "Yellow perch",
-  "Black bass",
-  "Pike",
-  "Pond smelt",
-  "Sweetfish",
-  "Cherry salmon",
-  "Char",
-  "Rainbow trout",
-  "Stringfish",
-  "Salmon",
-  "King salmon",
-  "Mitten crab",
-  "Guppy",
-  "Nibble fish",
-  "Angelfish",
-  "Neon tetra",
-  "Piranha",
-  "Arowana",
-  "Dorado",
-  "Gar",
-  "Arapaima",
-  "Saddled bichir",
-  "Sea butterfly",
-  "Seahorse",
-  "Clownfish",
-  "Surgeonfish",
-  "Butterfly fish",
-  "Napoleonfish",
-  "Zebra turkeyfish",
-  "Blowfish",
-  "Puffer fish",
-  "Horse mackerel",
-  "Barred knifejaw",
-  "Sea bass",
-  "Red snapper",
-  "Dab",
-  "Olive flounder",
-  "Squid",
-  "Moray eel",
-  "Ribbon eel",
-  "Football fish",
-  "Tuna",
-  "Blue marlin",
-  "Giant trevally",
-  "Ray",
-  "Ocean sunfish",
-  "Hammerhead shark",
-  "Shark",
-  "Saw shark",
-  "Whale shark",
-  "Oarfish",
-  "Coelacanth"
-]
-
-fish_names.each do |name|
-  Fish.create name: name
+YAMLSeed::MODELS.each do |model_name, fields|
+  seed = YAMLSeed.new( model_name )
+  
+  YAML.load_file( seed.file ).each do |attributes|
+    seed.model.create( attributes )
+  end
 end
