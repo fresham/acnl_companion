@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title AC:NL Companion
+    = csrf_meta_tags
+    
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
+    = javascript_include_tag "application", "data-turbolinks-track": "reload"
+
+  body
+    .menu
+      ul
+        li = link_to "Home", root_path
+        - if admin_user_signed_in?
+          li = link_to "Admin", admin_root_path
+
+    .container
+      = yield
