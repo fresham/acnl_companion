@@ -1,7 +1,17 @@
 <h1>Fish</h1>
 
-<ul>
-  <% @fish_names.each do |fish_name| %>
-  <li><%= fish_name %></li>
-  <% end %>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fish.each do |fish| %>
+      <tr>
+        <td><%= fish.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

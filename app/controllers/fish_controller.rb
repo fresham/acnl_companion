@@ -1,5 +1,5 @@
 class FishController < ApplicationController
   def index
-    @fish_names = Fish.pluck(:name)
+    @fish = Fish.all
   end
 end
