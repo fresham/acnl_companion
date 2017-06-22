@@ -1,0 +1,13 @@
+h1 Bugs & Fish
+
+table
+  thead
+    tr
+      th Name
+      th Price
+
+  tbody
+    - @creatures.each do |creature|
+      tr
+        td = creature.name
+        td = creature.price
